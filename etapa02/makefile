@@ -16,6 +16,9 @@ package:
 run:
 	cd $(PROJECT_NAME) && $(MAVEN) exec:java -Dexec.mainClass="ufpa.labsd.zookeeper.$(word 2, $(MAKECMDGOALS))"
 
+run-with-args:
+	cd $(PROJECT_NAME) && $(MAVEN) exec:java -Dexec.mainClass="ufpa.labsd.zookeeper.$(word 2, $(MAKECMDGOALS))" -Dexec.args="$(word 3, $(MAKECMDGOALS))"
+
 all:
 	clean compile
 

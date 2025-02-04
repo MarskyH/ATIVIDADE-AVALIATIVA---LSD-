@@ -14,7 +14,10 @@ package:
 	cd $(PROJECT_NAME) && $(MAVEN) package
 
 run:
-	cd $(PROJECT_NAME) && $(MAVEN) exec:java -Dexec.mainClass="ufpa.labsd.App"
+	cd $(PROJECT_NAME) && $(MAVEN) exec:java -Dexec.mainClass="ufpa.labsd.zookeeper.$(word 2, $(MAKECMDGOALS))"
 
 all:
 	clean compile
+
+%:
+	@:

@@ -49,6 +49,7 @@ Para maximizar compatibilidade e diminuir *overhead* com a instalação do
 zookeeper, optamos por utilizá-lo através de containers. Para executa
 
 ```shell
-docker compose up -d    # sobe o zookeeper e zoonavigator
+docker compose up -d    # sobe o zookeeper, zoonavigator e a app (Corrida)
 docker compose down     # mata os containers dos serviços
+docker compose logs -f  # visualiza os logs dos componentes
 ```

@@ -39,9 +39,8 @@ Utilizamos o conhecido utilitário `makefile` para abstrair os comandos de
 compilação e execução do exemplo.
 
 ```shell
-make            # limpa o projeto e compila
-make run        # roda a versão sem bug
-make run-bug    # roda a versão com bug
+make                                      # limpa o projeto e compila
+make run ufpa.labsd.zookeeper.Corrida     # roda a versão sem bug
 ```
 
 ### :whale: docker compose

@@ -1,5 +1,17 @@
-version: "3.9"
 services:
+  app:
+    container_name: app
+    hostname: app
+    network_mode: host
+    image: maven:3-openjdk-17
+    volumes:
+      - ./:/usr/src/mymaven:ro
+    working_dir: /usr/src/mymaven
+    entrypoint: "/bin/bash"
+    command:
+      ["-c", "mvn exec:java -Dexec.mainClass=ufpa.labsd.zookeeper.Corrida"]
+    depends_on:
+      - zookeeper
 
   zookeeper:
     container_name: zookeeper

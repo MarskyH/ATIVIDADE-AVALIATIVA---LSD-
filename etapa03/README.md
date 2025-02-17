@@ -1,4 +1,4 @@
-# Atividade 01 - ZooKeeper
+# Atividade 03 - ZooKeeper
 
 ```plaintext
                           UNIVERSIDADE FEDERAL DO PARÁ
@@ -39,9 +39,8 @@ Utilizamos o conhecido utilitário `makefile` para abstrair os comandos de
 compilação e execução do exemplo.
 
 ```shell
-make            # limpa o projeto e compila
-make run        # roda a versão sem bug
-make run-bug    # roda a versão com bug
+make                                      # limpa o projeto e compila
+make run ufpa.labsd.zookeeper.Corrida     # roda a versão sem bug
 ```
 
 ### :whale: docker compose
@@ -50,6 +49,7 @@ Para maximizar compatibilidade e diminuir *overhead* com a instalação do
 zookeeper, optamos por utilizá-lo através de containers. Para executa
 
 ```shell
-docker compose up -d    # sobe o zookeeper e zoonavigator
+docker compose up -d    # sobe o zookeeper, zoonavigator e a app (Corrida)
 docker compose down     # mata os containers dos serviços
+docker compose logs -f  # visualiza os logs dos componentes
 ```

@@ -1,4 +1,4 @@
-# Atividade 01 - ZooKeeper
+# Atividade 04 - ZooKeeper
 
 ```plaintext
                           UNIVERSIDADE FEDERAL DO PARÁ

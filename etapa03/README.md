@@ -6,7 +6,7 @@
                             FACULDADE DE COMPUTAÇÃO
                  EN05229 - LABORATORIO DE SISTEMAS DISTRIBUIDOS
 
-                    Atividade 01 - Coordenação com ZooKeeper
+            Atividade 03 - Implementação de barreiras reutilizáveis
 
 Alunos:
   - CLARICE MENDES E MENDES        202004940022

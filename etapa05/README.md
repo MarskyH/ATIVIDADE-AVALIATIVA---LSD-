@@ -53,3 +53,7 @@ zookeeper, optamos por utilizá-lo através de containers. Para executa
 docker compose up -d    # sobe o zookeeper e zoonavigator
 docker compose down     # mata os containers dos serviços
 ```
+
+## Demonstração
+
+[![asciicast](https://asciinema.org/a/fLKvPr7EQXp31qAfGXZX0lmNu.svg)](https://asciinema.org/a/fLKvPr7EQXp31qAfGXZX0lmNu)
